@@ -1,0 +1,23 @@
+{
+  "name": "speedyeats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass -w ./public/assets/scss:./public/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KilianOlry/SpeedyEats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KilianOlry/SpeedyEats/issues"
+  },
+  "homepage": "https://github.com/KilianOlry/SpeedyEats#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}
