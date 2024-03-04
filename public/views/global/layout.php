@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<?=PATH_IMAGE?>logo.webp" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/817262485e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./public/assets/css/styles.css">
-  <title>SpeedyEats | KO</title>
+  <link rel="stylesheet" href="<?=PATH_STYLE?>styles.css">
+  <title><?=TITLE?></title>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     ?>
   </main>
 
-  <script src="./public/assets/js/app.js"></script>
+  <script src="<?=PATH_JS?>app.js"></script>
 </body>
 
 </html>
