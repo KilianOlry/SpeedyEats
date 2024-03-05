@@ -1,12 +1,11 @@
 <?php
 
-$availablesRoutes = ['homepage', 'login', 'register',];
-$route = 'homepage';
-
-if (isset($_GET['page']) && in_array($_GET['page'], $availablesRoutes)) 
-{
-  $route = $_GET['page'];
-}
-
 require './src/imports/imports.php';
-require './public/views/global/layout.php';
+
+require PATH_CORE . 'routing.php';
+require PATH_IMPORTS . 'class.php';
+
+$db = new DbConnect('localhost', 'streetfood', 'root', '');
+$db->getPdo();
+
+require  PATH_VIEWS_GLOBAL . 'layout.php';
