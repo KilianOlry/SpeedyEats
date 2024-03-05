@@ -1,1 +1,3 @@
-<h1>login</h1>
+<?php
+  require PATH_VIEWS_AUTH . 'login.php';
+?>
