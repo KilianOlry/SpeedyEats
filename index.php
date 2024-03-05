@@ -1,6 +1,6 @@
 <?php
 
-$availablesRoutes = ['homepage', 'login'];
+$availablesRoutes = ['homepage', 'login', 'register',];
 $route = 'homepage';
 
 if (isset($_GET['page']) && in_array($_GET['page'], $availablesRoutes)) 

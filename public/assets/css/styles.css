@@ -201,5 +201,58 @@ header .dropdown:hover .dropdown-content {
     padding-right: 1rem;
   }
 }
+.container_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container_login form {
+  width: 30rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  margin-bottom: 2rem;
+}
+.input input {
+  background: transparent;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  color: #2E266F;
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+
+button[type=submit] {
+  cursor: pointer;
+  background-color: #2E266F;
+  padding: 1rem 2rem;
+  border: none;
+  margin-bottom: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.visibility {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=styles.css.map */

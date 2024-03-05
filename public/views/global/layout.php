@@ -13,16 +13,23 @@
 
 <body>
   <?php
-  require './public/views/global/header.php';
+  require PATH_VIEWS_GLOBAL . 'header.php';
   ?>
 
   <main>
     <?php
-    require './src/controllers/' . $route . '_controller.php';
+    require PATH_CONTROLLER . $route . '_controller.php';
     ?>
   </main>
 
   <script src="<?=PATH_JS?>app.js"></script>
+
+  <?php
+    if ($route === 'login' || $route === 'register') {
+      echo "<script src=" . PATH_JS . 'form.js' . "></script>";
+    }
+  ?>
+
 </body>
 
 </html>
