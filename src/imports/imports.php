@@ -20,4 +20,10 @@ define ('PATH_IMPORTS', './src/imports/');
 // PATH CORE
 define ('PATH_CORE', './src/core/');
 
+// PATH CLASS MANAGER
+define ('PATH_CLASS_MANAGER', './src/classes/Managers/');
+
+// PATH CLASS
+define ('PATH_CLASS', './src/classes/');
+
 

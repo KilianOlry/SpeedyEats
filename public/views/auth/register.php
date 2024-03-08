@@ -6,11 +6,11 @@
 
       <div class="input">
         <label for="name">Nom</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name">
       </div>
 
       <div class="input">
-        <label for="">Email</label>
+        <label for="email">Email</label>
         <input type="email" name="email" class="email">
         <p class="message_email"></p>
       </div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="input input_submit text-center">
-        <button type="submit" disabled class="submit">Valider</button>
+        <button type="submit" class="submit">Valider</button>
       </div>
     </form>
   </div>
