@@ -4,7 +4,7 @@ $register = new Register();
 $formControll = new FormControll();
 $userManager = new UserManager();
 
-$register->getView('register.php');
+$register->getView(PATH_VIEWS_AUTH, 'register');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -25,8 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $user_id = $userManager->setOne($user, $db->getPdo());
 
+            
             $_SESSION['status'] = 'success';
             $_SESSION['message'] = 'Votre compte est crée veuillez vous connecter';
+
+            $register->redirect('homepage');
+            
         } else {
             $_SESSION['status'] = 'error';
             $_SESSION['message'] = 'Les mots de passe dont différents';
