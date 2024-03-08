@@ -15,4 +15,15 @@
       $data->setId($pdo->lastInsertId());
       return $pdo->lastInsertId();
     }
+
+    public function getByMail(string $email, PDO $pdo): array
+    {
+      $selectByEmail = 'SELECT * FROM users WHERE email = :email';
+      $query = $pdo->prepare($selectByEmail);
+      $query->execute([
+        'email' => $email,
+      ]);
+      $data = $query->fetchAll();
+      return $data;
+    } 
   }

@@ -2,7 +2,7 @@
   <nav class="nav">
 
     <a href="?page=homepage" class="link-logo">
-      <img class="img" src="./public/assets/images/logo.webp" alt="logo du site web"><br>
+      <img class="img" src="<?= PATH_IMAGE ?>logo.webp" alt="logo du site web"><br>
       <h2><span>Street</span>Food</h2>
     </a>
     <ul class="menu" id="ID_menu">

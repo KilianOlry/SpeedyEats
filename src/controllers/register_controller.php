@@ -13,24 +13,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $password = $formControll->validateInput($_POST['password']);
         $repeatPassword = $formControll->validateInput($_POST['password']);
 
-        
+
         if ($repeatPassword === $password) {
             $passHash = $formControll->passHash($password);
 
-            $user = new User([
-                'name' => $name,
-                'email' => $email,
-                'password' => $passHash,
-            ]);
+            if ($userManager->getByMail($email, $db->getPdo()) == null) {
+                $user = new User([
+                    'name' => $name,
+                    'email' => $email,
+                    'password' => $passHash,
+                ]);
 
-            $user_id = $userManager->setOne($user, $db->getPdo());
+                $user_id = $userManager->setOne($user, $db->getPdo());
 
-            
-            $_SESSION['status'] = 'success';
-            $_SESSION['message'] = 'Votre compte est crée veuillez vous connecter';
+                $_SESSION['status'] = 'success';
+                $_SESSION['message'] = 'Votre compte est crée veuillez vous connecter';
 
-            $register->redirect('homepage');
-            
+                $register->redirect('homepage');
+            } else {
+                $_SESSION['status'] = 'error';
+                $_SESSION['message'] = 'Un compte est déjà crée avec cette adresse email';
+            }
         } else {
             $_SESSION['status'] = 'error';
             $_SESSION['message'] = 'Les mots de passe dont différents';
