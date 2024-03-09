@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require './src/core/imports.php';
 
 require PATH_CORE . 'routing.php';

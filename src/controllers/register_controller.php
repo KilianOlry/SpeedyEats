@@ -1,10 +1,10 @@
 <?php
 
-$register = new Register();
+$view = new Globally();
 $formControll = new FormControll();
 $userManager = new UserManager();
 
-$register->getView(PATH_VIEWS_AUTH, 'register');
+$view->getView(PATH_VIEWS_AUTH, 'register');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {

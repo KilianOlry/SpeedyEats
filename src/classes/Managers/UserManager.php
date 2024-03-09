@@ -23,7 +23,7 @@
       $query->execute([
         'email' => $email,
       ]);
-      $data = $query->fetchAll();
+      $data = $query->fetchAll(PDO::FETCH_ASSOC);
       return $data;
     } 
   }
