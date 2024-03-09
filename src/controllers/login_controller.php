@@ -15,16 +15,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($email) {
 
       $user = $userManager->getByMail($email, $db->getPdo());
-      if (password_verify($password, $user[0]['password'])) {
-        $_SESSION['user'] = [
-          'email' => $email,
-          'name' => $user[0]['name'],
-          'role' => $user[0]['role']
-        ];
 
-        $globally->redirect('homepage');
-        exit();
+      if ($user) {
+        if (password_verify($password, $user[0]['password'])) {
+          $_SESSION['user'] = [
+            'email' => $email,
+            'name' => $user[0]['name'],
+            'role' => $user[0]['role']
+          ];
 
+          $globally->redirect('homepage');
+          exit();
+        }
       } else {
         $_SESSION['status'] = 'error';
         $_SESSION['message'] = 'Email ou mot de passe incorrect';
