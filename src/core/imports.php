@@ -7,6 +7,9 @@ define('PATH_IMAGE', './public/assets/images/');
 define('PATH_STYLE', './public/assets/css/');
 define('PATH_JS', './public/assets/js/');
 
+// PATH LINK PAGE
+define ('PATH_LINK_PAGE', '?page=');
+
 // PATH CONTROLLER
 define ('PATH_CONTROLLER', './src/controllers/');
 
