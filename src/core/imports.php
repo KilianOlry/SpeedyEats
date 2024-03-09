@@ -14,6 +14,7 @@ define ('PATH_LINK_PAGE', '?page=');
 define ('PATH_CONTROLLER', './src/controllers/');
 
 // PATH VIEWS
+define ('PATH_VIEWS', './public/views/');
 define ('PATH_VIEWS_AUTH', './public/views/auth/');
 define ('PATH_VIEWS_GLOBAL', './public/views/global/');
 

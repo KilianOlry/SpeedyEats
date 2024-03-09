@@ -1,6 +1,5 @@
 <?php
 
-$globally = new Globally();
 $formControll = new FormControll();
 $userManager = new UserManager();
 
