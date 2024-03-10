@@ -6,3 +6,11 @@ $route = 'homepage';
 if (isset($_GET['page']) && in_array($_GET['page'], $availablesRoutes)) {
   $route = $_GET['page'];
 }
+
+if (!empty($_SESSION['user']) && $_SESSION['user']['role'] === 'ADMIN') {
+  $availablesAdminRoutes = ['test'];
+
+  if (isset($_GET['page']) && in_array($_GET['page'],$availablesAdminRoutes)) {
+      $route = $_GET['page'];
+  }
+}
