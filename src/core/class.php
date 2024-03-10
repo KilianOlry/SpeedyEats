@@ -8,5 +8,6 @@ require_once PATH_CLASS_MANAGER . 'Globally' . '.php';
 require_once PATH_CLASS_MANAGER . 'UserManager' . '.php';
 require_once PATH_CLASS_MANAGER . 'FormControll' . '.php';
 require_once PATH_CLASS_MANAGER . 'Granted' . '.php';
+require_once PATH_CLASS_MANAGER . 'MessageManager' . '.php';
 
 $globally = new Globally();

@@ -24,11 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ]);
 
                 $user_id = $userManager->setOne($user, $db->getPdo());
+                $datas = $userManager->getByMail($_POST['email'], $db->getPdo());
 
-                $_SESSION['status'] = 'success';
-                $_SESSION['message'] = 'Votre compte est crée veuillez vous connecter';
+                $_SESSION['user'] = [
+                    'id' => $datas[0]['id'],
+                    'name' => $datas[0]['name'],
+                    'email' => $datas[0]['email'],
+                    'role' => $datas[0]['role']
+                ];
 
-                $register->redirect('homepage');
+                $globally->redirect('homepage');
             } else {
                 $_SESSION['status'] = 'error';
                 $_SESSION['message'] = 'Un compte est déjà crée avec cette adresse email';
