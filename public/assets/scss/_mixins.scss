@@ -1,0 +1,12 @@
+@mixin flex($direction: row, $justify: center, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+@mixin background-img($url: test, $position: center, $cover: cover) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $cover;
+}

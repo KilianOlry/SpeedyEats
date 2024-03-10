@@ -1,37 +1,40 @@
-<section class="login">
-  <div class="container_login">
-    <h1>Inscription</h1>
-
-    <form action="" method="POST">
-
+<div class="login">
+  <section class="container_login">
+    <div class="background">
+      <div class="content">
+        <h2>StreetFood</h2>
+        <p>Création de compte pour bien manger de façon régulière</p>
+      </div>
+      <div class="blur"></div>
+    </div>
+    <div class="container_form">
+      <h1>Inscription</h1>
+      <form action="" method="POST">
       <div class="input">
-        <label for="name">Nom</label>
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder="Nom">
       </div>
 
       <div class="input">
-        <label for="email">Email</label>
-        <input type="email" name="email" class="email">
+        <input type="email" name="email" class="email" placeholder="Email">
         <p class="message_email"></p>
       </div>
 
       <div class="input input_password relative">
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" class="password">
+        <input type="password" placeholder="Mot de passe" name="password" class="password">
         <i class="fa-solid fa-eye visibility"></i>
         <p class="message_password"></p>
       </div>
       <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
 
       <div class="input input_password">
-        <label for="confirmPassword">Confirmer Mot de Passe</label>
-        <input type="password" name="confirmPassword" class="repeatPassword">
+        <input type="password" placeholder="Répéter le mot de passe" name="confirmPassword" class="repeatPassword">
         <p class="message_repeat_password"></p>
       </div>
 
       <div class="input input_submit text-center">
         <button type="submit" class="submit">Valider</button>
       </div>
-    </form>
-  </div>
-</section>
+      </form>
+    </div>
+  </section>
+</div>

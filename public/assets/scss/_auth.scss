@@ -1,51 +1,100 @@
-.container_login{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  form{
-      width: 30rem;
-  }
-}
 h1{
-  text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 300;
   margin-bottom: 2rem;
+  color: white;
 }
-
+::placeholder{
+  font-size: 1.8rem;
+}
   .input{
       margin-bottom: 2rem;
+      position: relative;
+      width: 320px;
       input{
-          background: transparent;
+          background: black;
+          border: none;
           outline: none;
-          border: 1px solid gray;
           border-radius: .5rem;
           width: 100%;
-          padding: 1rem;
-          color: $color-gray;
+          padding: 2rem 1.5rem;
+          color: #6366F1;
           font-size: 1.5rem;
       }
-
-  }
-  label{
-      display: block;
-      margin-bottom: .7rem;
-      font-size: 1.5rem;
   }
 
   button[type="submit"]{
       cursor: pointer;
-      background-color: $color-gray;
+      background-color: #6366F1;
       padding: 1rem 2rem;
       border: none;
       margin-bottom: 2rem;
       color: white;
-      border-radius: .5rem;
+      border-radius: 1rem;
+      width: 100%;
+      font-size: 2rem;
   }
 .visibility{
   position: absolute;
-  top: 4rem;
-  right: 1rem;
+  top: 2rem;
+  right: 1.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.login{
+  width: 100%;
+  height: calc(100vh - 131.33px);
+  display: flex;
+  align-items: center;
+  .container_login{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #161616;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    .background{
+      position: relative;
+      @include background-img('../images/global/background_auth.webp', center, cover);
+      background-color: rgb(0 0 0 / 0.5);
+      width: 100%;
+      height: 100%;
+      @include flex(row, center, center, wrap);
+      .content{
+        z-index: 20;
+        padding-inline: 1rem;
+        h2, p{
+          color: white;
+        }
+        h2{
+          font-size: 4rem;
+          letter-spacing: .6rem;
+          margin-bottom: 2rem;
+        }
+        p{
+          font-size: 2rem;
+        }
+      }
+      .blur{
+        position: absolute;
+        background-color: rgba(22, 22, 22, 0.6);
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .container_form{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @include flex(column, justify, center, no-wrap);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container_login{
+    display: flex !important;
+    flex-direction: column;
+  }
 }
