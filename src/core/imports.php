@@ -12,11 +12,13 @@ define ('PATH_LINK_PAGE', '?page=');
 
 // PATH CONTROLLER
 define ('PATH_CONTROLLER', './src/controllers/');
+define ('PATH_CONTROLLER_ADMIN', './src/controllers/admin/');
 
 // PATH VIEWS
 define ('PATH_VIEWS', './public/views/');
 define ('PATH_VIEWS_AUTH', './public/views/auth/');
 define ('PATH_VIEWS_GLOBAL', './public/views/global/');
+define ('PATH_VIEWS_ADMIN', './public/views/admin/');
 
 // PATH IMPORTS
 define ('PATH_IMPORTS', './src/core/');

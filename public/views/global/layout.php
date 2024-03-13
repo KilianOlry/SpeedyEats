@@ -12,7 +12,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="<?= PATH_STYLE ?>styles.css">
   <!-- TOASTR -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet" defer/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet" defer />
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -26,7 +26,11 @@
 
   <main>
     <?php
-    require PATH_CONTROLLER . $route . '_controller.php';
+    if (str_starts_with($route, 'admin')) {
+      require PATH_CONTROLLER_ADMIN . $route . '_controller.php';
+    } else {
+      require PATH_CONTROLLER . $route . '_controller.php';
+    }
     ?>
   </main>
 
