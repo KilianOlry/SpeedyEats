@@ -201,13 +201,6 @@ header .dropdown:hover .dropdown-content {
     padding-right: 1rem;
   }
 }
-h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
-  color: white;
-}
-
 ::placeholder {
   font-size: 1.8rem;
 }
@@ -254,7 +247,7 @@ button[type=submit] {
   display: flex;
   align-items: center;
 }
-.login .container_login {
+.login .container__login {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #161616;
@@ -262,7 +255,7 @@ button[type=submit] {
   height: 100%;
   align-items: center;
 }
-.login .container_login .background {
+.login .container__login .container__left {
   position: relative;
   background-image: url("../images/global/background_auth.webp");
   background-position: center;
@@ -276,40 +269,43 @@ button[type=submit] {
   justify-content: center;
   flex-wrap: wrap;
 }
-.login .container_login .background .content {
+.login .container__login .container__left .content {
   z-index: 20;
   padding-inline: 1rem;
 }
-.login .container_login .background .content h2, .login .container_login .background .content p {
+.login .container__login .container__left .content__title, .login .container__login .container__left .content__paragraph {
   color: white;
 }
-.login .container_login .background .content h2 {
+.login .container__login .container__left .content__title {
   font-size: 4rem;
   letter-spacing: 0.6rem;
   margin-bottom: 2rem;
 }
-.login .container_login .background .content p {
+.login .container__login .container__left .content__paragraph {
   font-size: 2rem;
 }
-.login .container_login .background .blur {
+.login .container__login .container__left .content__blur {
   position: absolute;
   background-color: rgba(22, 22, 22, 0.6);
   width: 100%;
   height: 100%;
 }
-.login .container_login .container_form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.login .container__login .container__right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: justify;
   flex-wrap: no-wrap;
 }
+.login .container__login .container__right__title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: white;
+}
 
 @media screen and (max-width: 900px) {
-  .container_login {
+  .container__right {
     display: flex !important;
     flex-direction: column;
   }

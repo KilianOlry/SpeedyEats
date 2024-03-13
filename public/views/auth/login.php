@@ -1,14 +1,14 @@
 <div class="login">
-  <section class="container_login">
-    <div class="background">
+  <section class="container__login">
+    <div class="container__left">
       <div class="content">
-        <h2>StreetFood</h2>
-        <p>Création de compte pour bien manger de façon régulière</p>
+        <h2 class="content__title">StreetFood</h2>
+        <p class="content__paragraph">Création de compte pour bien manger de façon régulière</p>
       </div>
-      <div class="blur"></div>
+      <div class="content__blur"></div>
     </div>
-    <div class="container_form">
-      <h1>Connexion</h1>
+    <div class="container__right">
+      <h1 class="container__right__title">Connexion</h1>
       <form action="" method="POST">
         <div class="input">
           <input type="email" placeholder="Email" name="email" class="email">
