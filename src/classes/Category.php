@@ -43,6 +43,15 @@ class Category
     $this->name = $name;
   }
 
+  public function getDescription(): string
+  {
+    return $this->description;
+  }
+  public function setDescription($description): void
+  {
+    $this->image = $description;
+  }
+
   public function getImage(): string
   {
     return $this->image;
