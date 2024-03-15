@@ -4,6 +4,7 @@ define('TITLE', 'SpeedyEats | KO');
 
 // PATH ASSETS
 define('PATH_IMAGE', './public/assets/images/global/');
+define('PATH_IMAGE_CATEGORY', './public/assets/images/imagesCategory/');
 define('PATH_STYLE', './public/assets/css/');
 define('PATH_JS', './public/assets/js/');
 
@@ -27,7 +28,7 @@ define ('PATH_IMPORTS', './src/core/');
 define ('PATH_CORE', './src/core/');
 
 // PATH CLASS MANAGER
-define ('PATH_CLASS_MANAGER', './src/classes/Managers/');
+define ('PATH_CLASS_MANAGER', './src/classes/managers/');
 
 // PATH CLASS
 define ('PATH_CLASS', './src/classes/');

@@ -20,7 +20,7 @@
       </div>
 
       <div class="input">
-      <input type="file" accept=".jpeg, .jpg, .png, .webp" placeholder="Choisir votre fichier">
+      <input type="file" name="image" accept=".jpeg, .jpg, .png, .webp" placeholder="Choisir votre fichier">
         <p class="message_email"></p>
       </div>
 

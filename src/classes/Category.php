@@ -49,7 +49,7 @@ class Category
   }
   public function setDescription($description): void
   {
-    $this->image = $description;
+    $this->description = $description;
   }
 
   public function getImage(): string

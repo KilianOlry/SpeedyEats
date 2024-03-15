@@ -18,13 +18,30 @@ class FormControll
     return $passHash;
   }
 
-  public function emailVerify(string $email): string 
+  public function emailVerify(string $email): string
   {
-    if(filter_var($email, FILTER_VALIDATE_EMAIL))
-    {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
       return $email;
-    }else{
+    } else {
       throw new Exception('Le champ ne peut pas être vide.');
     }
-}
+  }
+
+  public function imgVerify(string $imageName, string $tmpName, string $pathImage):mixed
+  {
+
+    $allowedExtensions = array('webp', 'jpeg', 'jpg', 'png');
+    $imgExtension = strtolower(pathinfo($imageName, PATHINFO_EXTENSION));
+
+    if (in_array($imgExtension, $allowedExtensions)) {
+
+      $time = time();
+      $finalName = $time . $imageName;
+
+      $move = move_uploaded_file($tmpName, $pathImage . $finalName);
+      return $finalName;
+    } else {
+      return false;
+    }
+  }
 }
