@@ -2,6 +2,9 @@
 // TITLE SITE
 define('TITLE', 'SpeedyEats | KO');
 
+// BASE SITE
+define('PATH_BASE', './public/views/global/base/');
+
 // PATH ASSETS
 define('PATH_IMAGE', './public/assets/images/global/');
 define('PATH_IMAGE_CATEGORY', './public/assets/images/imagesCategory/');

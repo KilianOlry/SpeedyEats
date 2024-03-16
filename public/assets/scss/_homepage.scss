@@ -118,10 +118,10 @@
     position: absolute;
     @include flex(row, center, center, no-wrap);
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     background-color: #86b971;
-    padding: 80px;
+    padding: 15px;
     bottom: 0;
     z-index: 0;
     color: #dee8c2;
