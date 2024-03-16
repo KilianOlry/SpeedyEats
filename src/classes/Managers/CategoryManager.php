@@ -13,4 +13,12 @@ class CategoryManager
       'image' => $data->getImage()
     ]);
   }
+
+  public function getAll(PDO $pdo): array
+  {
+    $getCategorys = 'SELECT * FROM category';
+    $statement = $pdo->query($getCategorys);
+
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

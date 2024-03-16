@@ -2,7 +2,7 @@
 
 class Globally{
   
-  public function getView(string $path, string $fileName): string
+  public function getView(string $path, string $fileName, array $datas = null): string
   {
     return require $path . $fileName . '.php';
   }
