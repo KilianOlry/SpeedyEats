@@ -1,22 +1,76 @@
-<div class="articles">
+<div class="categorys">
   <?php foreach ($datas as $data) : ?>
-    <article class="relative article">
-      <div class="article-wrapper">
-        <figure class="article__wrapper__img" style="background-image: url('<?= PATH_IMAGE_CATEGORY ?><?= $data['image'] ?>');">
-        </figure>
-        <div class="article__body">
-          <h2 class="article__body__title"><?= $data['name'] ?></h2>
-          <p class="article__body__description">
-            <?= $data['description'] ?>
-          </p>
-          <a href="?page=category&category=<?= $data['name'] ?>&id=<?= $data['id'] ?>" class="read-more article__body__link" title="Nos produits">
-            Voir nos <?= $data['name'] ?>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </a>
-        </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Nos <span><?= $data['name'] ?></span> rien que pour vous !
+        </h3>
+        <p class="card-hover__text">Fait maison</p>
+        <a href="#" class="card-hover__link">
+          <span>En savoir plus</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
       </div>
-    </article>
+      <div class="card-hover__extra">
+        <h4><?= $data['description'] ?></h4>
+      </div>
+      <img class="img__category" src="<?= PATH_IMAGE_CATEGORY . $data['image'] ?>" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Nos <span><?= $data['name'] ?></span> rien que pour vous !
+        </h3>
+        <p class="card-hover__text">Fait maison</p>
+        <a href="#" class="card-hover__link">
+          <span>En savoir plus</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4><?= $data['description'] ?></h4>
+      </div>
+      <img class="img__category" src="<?= PATH_IMAGE_CATEGORY . $data['image'] ?>" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Nos <span><?= $data['name'] ?></span> rien que pour vous !
+        </h3>
+        <p class="card-hover__text">Fait maison</p>
+        <a href="#" class="card-hover__link">
+          <span>En savoir plus</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4><?= $data['description'] ?></h4>
+      </div>
+      <img class="img__category" src="<?= PATH_IMAGE_CATEGORY . $data['image'] ?>" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Nos <span><?= $data['name'] ?></span> rien que pour vous !
+        </h3>
+        <p class="card-hover__text">Fait maison</p>
+        <a href="#" class="card-hover__link">
+          <span>En savoir plus</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4><?= $data['description'] ?></h4>
+      </div>
+      <img class="img__category" src="<?= PATH_IMAGE_CATEGORY . $data['image'] ?>" alt="">
+    </div>
   <?php endforeach; ?>
 </div>
