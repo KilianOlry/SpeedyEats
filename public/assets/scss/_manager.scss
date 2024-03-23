@@ -88,12 +88,12 @@
   border: 1px solid $app-content-secondary-color;
   color: $app-content-main-color;
   font-size: $h1-font-size;
-  line-height: 24px;
-  border-radius: 4px;
+  line-height: 2.4rem;
+  border-radius: .4rem;
   padding: 0px 10px 0px 32px;
-  height: 32px;
+  height: 3.2rem;
   @include searchIcon("fff");
-  background-size: 16px;
+  background-size: 1.6rem;
   background-repeat: no-repeat;
   background-position: left 10px center;
   width: 100%;
@@ -131,9 +131,9 @@
 .tableView {
   .products-header {
     display: flex;
+    color: white;
     align-items: center;
     border-radius: 4px;
-    background-color: $app-content-secondary-color;
     position: sticky;
     top: 0;
   }
@@ -143,11 +143,6 @@
     align-items: center;
     border-radius: 4px;
 
-    &:hover {
-      box-shadow: $filter-shadow;
-      background-color: $app-content-secondary-color;
-    }
-
     .cell-more-button {
       display: none;
     }
@@ -156,14 +151,13 @@
   .product-cell {
     flex: 1;
     padding: 8px 16px;
-    color: $app-content-main-color;
     font-size: $h1-font-size;
     display: flex;
     align-items: center;
 
     img {
-      width: 32px;
-      height: 32px;
+      width: 8rem;
+      height: 8rem;
       border-radius: 6px;
       margin-right: 6px;
     }
@@ -217,9 +211,6 @@
     margin-left: 4px;
     display: flex;
     align-items: center;
-
-    &:hover {
-    }
     svg {
       width: 12px;
     }
@@ -342,7 +333,7 @@
   }
 
   .product-cell {
-    color: $app-content-main-color;
+    color: white;
     font-size: $h1-font-size;
     margin-bottom: 8px;
 

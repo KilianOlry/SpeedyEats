@@ -29,7 +29,7 @@ class Granted
           '<li class="link dropdown">
             <a href="" class="nav-item">Administateur</a>
           <div class="dropdown-content">
-            <a href="?page=admin_manager" class="dropdown-item">Panneau Admin</a>
+            <a href="?page=admin_s_category" class="dropdown-item">Panneau Admin</a>
             <a href="?page=logout">Déconnexion</a>
           </div>
         </li>';

@@ -23,6 +23,7 @@ define ('PATH_VIEWS', './public/views/');
 define ('PATH_VIEWS_AUTH', './public/views/auth/');
 define ('PATH_VIEWS_GLOBAL', './public/views/global/');
 define ('PATH_VIEWS_ADMIN', './public/views/admin/');
+define ('PATH_VIEWS_ADMIN_GLOBAL', './public/views/admin/global/');
 
 // PATH IMPORTS
 define ('PATH_IMPORTS', './src/core/');
