@@ -1,6 +1,10 @@
 <div class="app-content-header">
   <h1 class="app-content-headerText">Catégories</h1>
-  <button class="app-content-headerButton">Ajouter un produit</button>
+  <button class="app-content-headerButton">
+    <a href="<?= PATH_LINK_PAGE . 'admin_c_category' ?>" class="">
+      Créer une catégorie
+    </a>
+  </button>
 </div>
 <div class="app-content-actions">
   <input class="search-bar" placeholder="Search..." type="text">
@@ -71,11 +75,12 @@
         <span class="status active">Active</span>
       </div>
       <div class="product-cell price">
-        <a href="<?= 'admin_u_category' . PATH_LINK_PAGE . $data['id'] ?>">
-          <span>
-            <i class="fa-regular fa-pen-to-square cell-label"></i>
-          </span>
-        </a>
+        <form action="?page=admin_u_category" method="post">
+          <input type="text" name="id" hidden value="<?= $data['id'] ?>">
+          <button type="submit">
+            <i class="fa-regular fa-pen-to-square"></i>
+          </button>
+        </form>
       </div>
     </div>
   <?php endforeach; ?>

@@ -21,4 +21,15 @@ class CategoryManager
 
     return $statement->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public function getOne(PDO $pdo, int $id)
+  {
+    $getCategory = 'SELECT * FROM category WHERE id = :id';
+    $statement = $pdo->prepare($getCategory);
+    $statement->execute([
+      'id' => $id
+    ]);
+    $data = $statement->fetch(PDO::FETCH_ASSOC);
+    return $data;
+  }
 }
