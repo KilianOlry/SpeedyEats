@@ -13,16 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $checkImage = $formControll->imgVerify($_FILES['image']['name'], $_FILES['image']['tmp_name'], PATH_IMAGE_CATEGORY);
 
     if ($checkImage !== false) {
-      
+
       $category = new Category([
         'name' => $name,
         'description' => $description,
         'image' => $checkImage,
       ]);
-      
+
       $categoryManager = new CategoryManager();
       $categoryManager->setOne($category, $db->getPdo());
-      
+
       $_SESSION['status'] = 'success';
       $_SESSION['message'] = 'Catégorie crée avec succèss';
     } else {
