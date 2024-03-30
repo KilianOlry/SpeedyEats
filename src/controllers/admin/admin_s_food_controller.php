@@ -11,5 +11,5 @@
     $category->deleteOne($db->getPdo(), $_POST['id']);
 
     $_SESSION['status'] = 'success';
-    $_SESSION['message'] = 'Catégorie supprimer';
+    $_SESSION['message'] = 'Aliment supprimer';
   }

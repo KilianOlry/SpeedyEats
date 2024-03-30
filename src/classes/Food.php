@@ -10,8 +10,21 @@ class Food
   private float $protein;
   private float $weight;
 
-  public function __construct()
+  public function __construct(array $props)
   {
+    $this->hydrate($props);
+  }
+
+  public function hydrate(array $props)
+  {
+    if (is_array($props) && count($props)) {
+      foreach ($props as $key => $value) {
+        $method = 'set' . ucfirst($key);
+        if (method_exists($this, $method)) {
+          $this->$method($value);
+        }
+      }
+    }
   }
 
   public function getId(): int

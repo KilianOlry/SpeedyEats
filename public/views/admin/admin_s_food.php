@@ -1,8 +1,8 @@
 <div class="app-content-header">
-  <h1 class="app-content-headerText">Catégories</h1>
+  <h1 class="app-content-headerText">Aliments</h1>
   <button class="app-content-headerButton">
-    <a href="<?= PATH_LINK_PAGE . 'admin_c_category' ?>" class="">
-      Créer une catégorie
+    <a href="<?= PATH_LINK_PAGE . 'admin_c_food' ?>" class="">
+      Créer un Aliment
     </a>
   </button>
 </div>
