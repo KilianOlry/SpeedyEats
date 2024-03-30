@@ -13,14 +13,10 @@
   margin: 0 auto;
 }
 
-.app-icon {
-  color: $sidebar-main-color;
-
-  svg {
-    width: 24px;
-    height: 24px;
+  #svg {
+    width: 16px;
+    height: 16px;
   }
-}
 
 .app-content {
   padding: 16px;
@@ -330,6 +326,14 @@
       cursor: pointer;
       display: none;
     }
+    form{
+      button{
+      background: none;
+      border: none;
+      outline: none;
+      background-color: red;
+    }
+  }
   }
 
   .product-cell {
@@ -355,8 +359,9 @@
       border-radius: 4px;
       margin-bottom: 16px;
     }
-  }
 
+}
+  
   .cell-label {
     opacity: 0.6;
   }

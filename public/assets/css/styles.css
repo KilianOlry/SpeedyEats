@@ -533,12 +533,9 @@ header .dropdown:hover .dropdown-content {
   margin: 0 auto;
 }
 
-.app-icon {
-  color: #fff;
-}
-.app-icon svg {
-  width: 24px;
-  height: 24px;
+#svg {
+  width: 16px;
+  height: 16px;
 }
 
 .app-content {
@@ -801,6 +798,12 @@ header .dropdown:hover .dropdown-content {
   color: #fff;
   cursor: pointer;
   display: none;
+}
+.gridView .products-row form button {
+  background: none;
+  border: none;
+  outline: none;
+  background-color: red;
 }
 .gridView .product-cell {
   color: white;
