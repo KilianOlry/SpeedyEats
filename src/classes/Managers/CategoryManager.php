@@ -32,4 +32,17 @@ class CategoryManager
     $data = $statement->fetch(PDO::FETCH_ASSOC);
     return $data;
   }
+
+  public function updateOne(PDO $pdo, Category $data)
+  {
+    $updateCategory = 'UPDATE category SET name = :name, description = :description, image = :image WHERE id = :id';
+
+    $statement = $pdo->prepare($updateCategory);
+    $statement->execute([
+      'id' => $data->getId(),
+      'name' => $data->getName(),
+      'description' => $data->getDescription(),
+      'image' => $data->getImage(),
+    ]);
+  }
 }

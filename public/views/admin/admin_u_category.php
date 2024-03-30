@@ -9,18 +9,20 @@
     </div>
     <div class="container__right">
       <h1 class="container__right__title">Créer une catégorie</h1>
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="?page=admin_u_category" method="POST" enctype="multipart/form-data">
         <div class="input">
-          <input type="text" name="name" placeholder="<?= $datas['name'] ?>">
+          <input type="text" hidden value="<?= $datas['id'] ?>" name="id">
+        </div>
+        <div class="input">
+          <input type="text" value="<?= $datas['name'] ?>" name="name" placeholder="<?= $datas['name'] ?>">
         </div>
 
         <div class="input">
-          <textarea name="description" class="description" placeholder="<?= $datas['description'] ?>" cols="30" rows="10"></textarea>
-          <p class="message_email"></p>
+          <textarea name="description" value="<?= $datas['description'] ?>" class="description" placeholder="<?= $datas['description'] ?>" cols="30" rows="10"></textarea>
         </div>
 
         <div class="input">
-          <input type="file" name="image" accept=".jpeg, .jpg, .png, .webp" placeholder="Choisir votre fichier">
+          <input type="file" name="image" value="<?= $datas['image'] ?>" accept=".jpeg, .jpg, .png, .webp" placeholder="Choisir votre fichier">
           <p class="message_email"></p>
         </div>
 
