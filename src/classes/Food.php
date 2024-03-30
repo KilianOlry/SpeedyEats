@@ -1,0 +1,69 @@
+<?php
+
+class Food
+{
+
+  private int $id;
+  private string $name;
+  private float $lipid;
+  private float $glucid;
+  private float $protein;
+  private float $weight;
+
+  public function __construct()
+  {
+  }
+
+  public function getId(): int
+  {
+    return $this->id;
+  }
+  public function setId($id): void
+  {
+    $this->id = $id;
+  }
+
+  public function getName(): string
+  {
+    return $this->name;
+  }
+  public function setName($name): void
+  {
+    $this->name = $name;
+  }
+
+  public function getLipid(): float
+  {
+    return $this->lipid;
+  }
+  public function setLipid($lipid): void
+  {
+    $this->lipid = $lipid;
+  }
+
+  public function getGlucid(): float
+  {
+    return $this->glucid;
+  }
+  public function setGlucid($glucid): void
+  {
+    $this->glucid = $glucid;
+  }
+  public function getProtein(): float
+  {
+    return $this->protein;
+  }
+  public function setProtein($protein): void
+  {
+    $this->protein = $protein;
+  }
+
+  public function getWeigth(): float
+  {
+    return $this->weight;
+  }
+  public function setWeigth($weight): void
+  {
+    $this->weight = $weight;
+  }
+}
