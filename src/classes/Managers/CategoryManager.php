@@ -45,4 +45,13 @@ class CategoryManager
       'image' => $data->getImage(),
     ]);
   }
+
+  public function deleteOne(PDO $pdo, $id)
+  {
+    $statement = $pdo->prepare('DELETE FROM category WHERE id = :id');
+    $statement->execute([
+      'id' => $id,
+    ]);
+    return true;
+  }
 }
