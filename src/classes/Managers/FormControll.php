@@ -12,6 +12,15 @@ class FormControll
     return $cleanValue;
   }
 
+  public function validateInputNumber(int $inputValue)
+  {
+      if (is_numeric($inputValue)) {
+          return $inputValue;
+      } else {
+          return false;
+      }
+  }
+
   public function passHash(string $password): string
   {
     $passHash = password_hash($password, PASSWORD_DEFAULT);
@@ -27,7 +36,7 @@ class FormControll
     }
   }
 
-  public function imgVerify(string $imageName, string $tmpName, string $pathImage):mixed
+  public function imgVerify(string $imageName, string $tmpName, string $pathImage): mixed
   {
 
     $allowedExtensions = array('webp', 'jpeg', 'jpg', 'png');

@@ -9,6 +9,7 @@ class Food
   private float $glucid;
   private float $protein;
   private float $weight;
+  private string $image;
 
   public function __construct(array $props)
   {
@@ -78,5 +79,14 @@ class Food
   public function setWeigth($weight): void
   {
     $this->weight = $weight;
+  }
+
+  public function getImage(): string
+  {
+    return $this->image;
+  }
+  public function setImage($image): void
+  {
+    $this->image = $image;
   }
 }
