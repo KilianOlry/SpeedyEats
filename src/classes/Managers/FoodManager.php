@@ -5,8 +5,8 @@ class FoodManager
 
   public function setOne(Food $data, PDO $pdo): void
   {
-    $insertCategory = 'INSERT INTO foods (name, lipid, glucid, protein, weight, image) VALUES (:name, :lipid, :glucid, :protein, :weight, :image)';
-    $statement = $pdo->prepare($insertCategory);
+    $insertFood = 'INSERT INTO foods (name, lipid, glucid, protein, weight, image) VALUES (:name, :lipid, :glucid, :protein, :weight, :image)';
+    $statement = $pdo->prepare($insertFood);
     $statement->execute([
       'name' => $data->getName(),
       'lipid' => $data->getLipid(),
@@ -19,8 +19,8 @@ class FoodManager
 
   public function getAll(PDO $pdo): array
   {
-    $getCategorys = 'SELECT * FROM category';
-    $statement = $pdo->query($getCategorys);
+    $getFoods = 'SELECT * FROM foods';
+    $statement = $pdo->query($getFoods);
 
     return $statement->fetchAll(PDO::FETCH_ASSOC);
   }

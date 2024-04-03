@@ -21,11 +21,21 @@
         <img src="<?= PATH_ICON . 'admin_filter.svg' ?>" alt="icone filtre" id="svg">
       </button>
     </div>
-    <div class="product-cell sales">Description<button class="sort-button">
+    <div class="product-cell sales">Lipides<button class="sort-button">
         <img src="<?= PATH_ICON . 'admin_filter.svg' ?>" alt="icone filtre" id="svg">
       </button>
     </div>
-    <div class="product-cell stock">Date de création
+    <div class="product-cell stock">Glucides
+      <button class="sort-button">
+        <img src="<?= PATH_ICON . 'admin_filter.svg' ?>" alt="icone filtre" id="svg">
+      </button>
+    </div>
+    <div class="product-cell stock">Proteines
+      <button class="sort-button">
+        <img src="<?= PATH_ICON . 'admin_filter.svg' ?>" alt="icone filtre" id="svg">
+      </button>
+    </div>
+    <div class="product-cell stock">Calories
       <button class="sort-button">
         <img src="<?= PATH_ICON . 'admin_filter.svg' ?>" alt="icone filtre" id="svg">
       </button>
@@ -42,16 +52,27 @@
   <?php foreach ($datas as $data) : ?>
     <div class="products-row">
       <div class="product-cell image">
-        <img src="<?= PATH_IMAGE_CATEGORY . $data['image'] ?>" alt="product">
+        <img src="<?= PATH_IMAGE_FOOD. $data['image'] ?>" alt="product">
         <!-- <span>Ocean</span> -->
       </div>
-      <div class="product-cell category"><span class="cell-label">Category:</span><?= $data['name'] ?></div>
-      <div class="product-cell price"><span class="cell-label">Price:</span><?= $data['description'] ?></div>
+      <div class="product-cell category"><span class="cell-label">Aliments:</span><?= $data['name'] ?></div>
+      <div class="product-cell price"><span class="cell-label">Lipid</span><?= $data['lipid'] ?></div>
 
       <div class="product-cell stock">
         <span class="cell-label">Stock:</span>
-        <?= date('d-m-Y', strtotime($data['created_at'])); ?>
+        <?= $data['glucid'] ?>
       </div>
+
+      <div class="product-cell stock">
+        <span class="cell-label">Stock:</span>
+        <?= $data['protein'] ?>
+      </div>
+
+      <div class="product-cell stock">
+        <span class="cell-label">Stock:</span>
+        <?= $data['weight'] ?>
+      </div>
+
       <div class="product-cell status-cell">
         <span class="cell-label">Status:</span>
         <span class="status active">Active</span>
