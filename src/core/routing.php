@@ -8,7 +8,7 @@ if (isset($_GET['page']) && in_array($_GET['page'], $availablesRoutes)) {
 }
 
 if (!empty($_SESSION['user']) && $_SESSION['user']['role'] === 'ADMIN') {
-  $availablesAdminRoutes = ['admin_c_category', 'admin_manager', 'admin_s_food', 'admin_c_food', 'admin_s_category', 'admin_u_category'];
+  $availablesAdminRoutes = ['admin_c_category', 'admin_manager', 'admin_s_food', 'admin_c_food', 'admin_u_food', 'admin_s_category', 'admin_u_category'];
 
   if (isset($_GET['page']) && in_array($_GET['page'],$availablesAdminRoutes)) {
       $route = $_GET['page'];

@@ -78,7 +78,7 @@
         <span class="status active">Active</span>
       </div>
       <div class="product-cell price">
-        <form action="?page=admin_u_category" method="post">
+        <form action="?page=admin_u_food" method="post">
           <input type="text" name="id" hidden value="<?= $data['id'] ?>">
           <button type="submit" class="icon-action">
             <i class="fa-regular fa-pen-to-square"></i>

@@ -27,8 +27,8 @@ class FoodManager
 
   public function getOne(PDO $pdo, int $id)
   {
-    $getCategory = 'SELECT * FROM category WHERE id = :id';
-    $statement = $pdo->prepare($getCategory);
+    $getFood = 'SELECT * FROM foods WHERE id = :id';
+    $statement = $pdo->prepare($getFood);
     $statement->execute([
       'id' => $id
     ]);
