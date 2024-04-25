@@ -55,7 +55,7 @@ class FoodManager
 
   public function deleteOne(PDO $pdo, $id)
   {
-    $statement = $pdo->prepare('DELETE FROM category WHERE id = :id');
+    $statement = $pdo->prepare('DELETE FROM foods WHERE id = :id');
     $statement->execute([
       'id' => $id,
     ]);

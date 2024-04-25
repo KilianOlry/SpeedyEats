@@ -81,13 +81,13 @@
         <form action="?page=admin_u_food" method="post">
           <input type="text" name="id" hidden value="<?= $data['id'] ?>">
           <button type="submit" class="icon-action">
-            <img src="<?= PATH_ICON . 'edit' . '.svg' ?>" alt="icon modification">
+            <img src="<?= PATH_ICON . 'edit.svg' ?>" alt="icon modification">
           </button>
         </form>
         <form action="" method="post">
           <input type="text" name="id" hidden value="<?= $data['id'] ?>">
           <button type="submit" class="icon-action">
-          <img src="<?= PATH_ICON . 'delete' . '.svg' ?>" alt="icon suppression">
+            <img src="<?= PATH_ICON . 'delete.svg' ?>" alt="icon suppression">
           </button>
         </form>
       </div>

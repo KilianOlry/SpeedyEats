@@ -23,7 +23,7 @@
           <input type="number" name="protein" placeholder="Nombre de protéines">
         </div>
         <div class="input">
-          <input type="number" name="weigth" placeholder="Nombre de calories">
+          <input type="number" name="weight" placeholder="Nombre de calories">
         </div>
         <div class="input">
           <input type="file" name="image" accept=".jpeg, .jpg, .png, .webp" placeholder="Choisir votre fichier">

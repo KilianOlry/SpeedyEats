@@ -8,13 +8,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $formControll = new FormControll();
 
-  if (!empty($_POST['name']) && !empty($_POST['lipid']) && !empty($_POST['glucid']) && !empty($_POST['protein']) && !empty($_POST['weigth'])) {
+  if (!empty($_POST['name']) && !empty($_POST['lipid']) && !empty($_POST['glucid']) && !empty($_POST['protein']) && !empty($_POST['weight'])) {
 
     $name = $formControll->validateInput($_POST['name']);
     $lipid = $formControll->validateInputNumber($_POST['lipid']);
     $glucid = $formControll->validateInputNumber($_POST['glucid']);
     $protein = $formControll->validateInputNumber($_POST['protein']);
-    $weigth = $formControll->validateInputNumber($_POST['weigth']);
+    $weight = $formControll->validateInputNumber($_POST['weight']);
 
     $checkImage = $formControll->imgVerify($_FILES['image']['name'], $_FILES['image']['tmp_name'], PATH_IMAGE_FOOD);
 
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'lipid' => $lipid,
         'glucid' => $glucid,
         'protein' => $protein,
-        'weigth' => $weigth,
+        'weight' => $weight,
         'image' => $checkImage
       ]);
 
