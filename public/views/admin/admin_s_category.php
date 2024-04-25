@@ -60,13 +60,13 @@
         <form action="?page=admin_u_category" method="post">
           <input type="text" name="id" hidden value="<?= $data['id'] ?>">
           <button type="submit" class="icon-action">
-            <i class="fa-regular fa-pen-to-square"></i>
+            <img src="<?= PATH_ICON . 'edit.svg' ?>" alt="icon modification">
           </button>
         </form>
         <form action="" method="post">
           <input type="text" name="id" hidden value="<?= $data['id'] ?>">
           <button type="submit" class="icon-action">
-            <i class="fa-solid fa-trash"></i>
+            <img src="<?= PATH_ICON . 'delete.svg' ?>" alt="icon suppression">
           </button>
         </form>
       </div>

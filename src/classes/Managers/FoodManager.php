@@ -12,7 +12,7 @@ class FoodManager
       'lipid' => $data->getLipid(),
       'glucid' => $data->getGlucid(),
       'protein' => $data->getProtein(),
-      'weight' => $data->getWeigth(),
+      'weight' => $data->getWeight(),
       'image' => $data->getImage()
     ]);
   }
@@ -36,15 +36,19 @@ class FoodManager
     return $data;
   }
 
-  public function updateOne(PDO $pdo, Category $data)
+  public function updateOne(PDO $pdo, Food $data)
   {
-    $updateCategory = 'UPDATE category SET name = :name, description = :description, image = :image WHERE id = :id';
+    $updateFood = 'UPDATE foods SET name = :name, lipid = :lipid, glucid = :glucid, protein = :protein,
+                       weight = :weight, image = :image WHERE id = :id';
 
-    $statement = $pdo->prepare($updateCategory);
+    $statement = $pdo->prepare($updateFood);
     $statement->execute([
       'id' => $data->getId(),
       'name' => $data->getName(),
-      'description' => $data->getDescription(),
+      'lipid' => $data->getLipid(),
+      'glucid' => $data->getGlucid(),
+      'protein' => $data->getProtein(),
+      'weight' => $data->getWeight(),
       'image' => $data->getImage(),
     ]);
   }

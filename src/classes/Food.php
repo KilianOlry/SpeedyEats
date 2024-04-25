@@ -72,11 +72,11 @@ class Food
     $this->protein = $protein;
   }
 
-  public function getWeigth(): float
+  public function getWeight(): float
   {
     return $this->weight;
   }
-  public function setWeigth($weight): void
+  public function setWeight($weight): void
   {
     $this->weight = $weight;
   }
