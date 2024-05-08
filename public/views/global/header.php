@@ -18,9 +18,8 @@
 
       <li>
         <a href="<?= PATH_LINK_PAGE . 'cart' ?>" class="cart relative">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span class="quantity" id="quantity">
-          </span>
+          <img src="<?= PATH_ICON . 'cart.svg' ?>" alt="icon de panier" class="icon-cart">
+          <span class="quantity" id="quantity">0</span>
         </a>
       </li>
     </ul>

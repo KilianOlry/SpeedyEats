@@ -81,9 +81,17 @@ header .nav .link-logo .img {
 }
 header .nav .menu {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   font-size: 2rem;
   text-transform: capitalize;
+}
+header .nav .menu .cart .icon-cart {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: -2.2rem;
+  top: -0.5rem;
+  z-index: 20;
 }
 header .nav .menu .cart .quantity {
   display: flex;
@@ -828,6 +836,28 @@ header .dropdown:hover .dropdown-content {
 }
 .gridView .cell-label {
   opacity: 0.6;
+}
+
+.banner {
+  background-image: url("../images/global/bg.webp");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+.banner .shadow {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.banner svg {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  z-index: 20;
 }
 
 /*# sourceMappingURL=styles.css.map */

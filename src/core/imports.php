@@ -8,6 +8,7 @@ define('PATH_BASE', './public/views/global/base/');
 // PATH ASSETS
 define('PATH_IMAGE', './public/assets/images/global/');
 define('PATH_ICON', './public/assets/images/global/icons/');
+define('PATH_EFFECT', './public/assets/images/global/effects/');
 define('PATH_IMAGE_CATEGORY', './public/assets/images/imagesCategory/');
 define('PATH_IMAGE_FOOD', './public/assets/images/imagesFood/');
 define('PATH_STYLE', './public/assets/css/');

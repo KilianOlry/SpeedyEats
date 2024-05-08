@@ -1,3 +1,7 @@
+<?php
+  require PATH_VIEWS_GLOBAL . 'banner.php';
+?>
+
 <div class="categorys">
   <?php foreach ($datas as $data) : ?>
     <div class="card-hover">

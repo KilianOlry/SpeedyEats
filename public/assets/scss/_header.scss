@@ -19,10 +19,18 @@ header {
 
     .menu {
       display: flex;
-      gap: 2rem;
+      gap: 4rem;
       font-size: 2rem;
       text-transform: capitalize;
       .cart {
+        .icon-cart{
+          width: 2.5rem;
+          height: 2.5rem;
+          position: absolute;
+          left: -2.2rem;
+          top: -.5rem;
+          z-index: 20;
+        }
         .quantity {
           display: flex;
           justify-content: center;
