@@ -41,7 +41,8 @@ i {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -325,6 +326,13 @@ header .dropdown:hover .dropdown-content {
     flex-direction: column;
   }
 }
+.title {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  font-style: italic;
+}
+
 .categorys {
   margin-block: 7rem;
   display: flex;
@@ -332,7 +340,7 @@ header .dropdown:hover .dropdown-content {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .card-hover {
@@ -416,10 +424,10 @@ header .dropdown:hover .dropdown-content {
   padding: 10px;
   transition: all 0.35s;
 }
-.card-hover__link:hover svg {
+.card-hover__link:hover img {
   transform: translateX(4px);
 }
-.card-hover__link svg {
+.card-hover__link img {
   width: 18px;
   margin-left: 4px;
   transition: transform 0.3s;
@@ -839,8 +847,7 @@ header .dropdown:hover .dropdown-content {
 }
 
 .banner {
-  background-image: url("../images/global/bg.webp");
-  background-position: center;
+  background: url("../images/global/bg.webp") no-repeat fixed center;
   background-size: cover;
   height: 70vh;
   width: 100%;

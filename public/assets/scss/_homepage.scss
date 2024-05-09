@@ -1,7 +1,13 @@
+.title{
+  font-size: $biggeste-font-size;
+  text-transform: capitalize;
+  letter-spacing: .3rem;
+  font-style: italic;
+}
 .categorys{
   margin-block: 7rem;
   @include flex(row, center, center, wrap);
-  gap: 2rem;
+  gap: 4rem;
 }.card-hover {
   $root: &;
   width: 320px;
@@ -102,11 +108,11 @@
     transition: all 0.35s;
 
     &:hover {
-      svg {
+      img {
         transform: translateX(4px);
       }
     }
-    svg {
+    img {
       width: 18px;
       margin-left: 4px;
       transition: transform 0.3s;
