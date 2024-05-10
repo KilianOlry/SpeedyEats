@@ -1,5 +1,5 @@
 <?php
 
-  require PATH_VIEWS . 'food.php';
+  require PATH_VIEWS . 'foods.php';
   $categoryManager = new CategoryManager;
 

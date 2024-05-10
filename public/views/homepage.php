@@ -13,7 +13,7 @@
           Nos <span><?= $data['name'] ?></span> rien que pour vous !
         </h3>
         <p class="card-hover__text">Fait maison</p>
-        <a href="<?= PATH_LINK_PAGE . 'food' . '&category=' . $data['id'] ?>" class="card-hover__link">
+        <a href="<?= PATH_LINK_PAGE . 'products' . '&category=' . $data['id'] ?>" class="card-hover__link">
           <span>En savoir plus</span>
           <img src="<?= PATH_ICON . 'arrow.svg'; ?>" alt="en savoir plus">
         </a>
