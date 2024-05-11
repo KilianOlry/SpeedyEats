@@ -1,0 +1,60 @@
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  .food-card {
+    background: #dfe5ff;
+    padding: 30px 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    position: relative;
+  .button-23 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 25px 5px 25px 5px;
+    color: $color-gray;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    &:focus-visible {
+      box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+      transition: box-shadow .2s;
+    }
+    &:active {
+      background-color: #F7F7F7;
+      border-color: #000000;
+      transform: scale(.96);
+    }
+    &:disabled {
+      border-color: #DDDDDD;
+      color: #DDDDDD;
+      cursor: not-allowed;
+      opacity: 1;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+  
+    }
+  }
+    .food-card-img img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 25px;
+    }
+    .food-card-name {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: var(--text-black-100);
+    }
+  }
+}

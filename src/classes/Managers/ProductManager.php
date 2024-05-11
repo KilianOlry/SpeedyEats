@@ -10,7 +10,7 @@
     }
 
     public function getOne(int $category_id, PDO $pdo): array {
-      $queryGetAll = 'SELECT p.*, c.name FROM products AS p 
+      $queryGetAll = 'SELECT p.*, c.name as category_name FROM products AS p 
                       INNER JOIN category AS c ON c.id = p.category_id 
                       WHERE p.category_id = :category_id';
       
