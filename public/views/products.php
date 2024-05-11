@@ -1,1 +1,1 @@
-<h1 class="title">nos produits</h1>
+<h1 class="title">nos <?= $products[0]['name'] ?></h1>
