@@ -1,14 +1,12 @@
 .products{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, wrap);
   margin-top: 7rem;
   .food-card {
     background: #dfe5ff;
-    padding: 30px 30px;
+    padding: 3rem;
     border-radius: 25px;
     text-align: center;
-    width: 200px;
+    width: 20rem;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     position: relative;
   .button-23 {
@@ -40,21 +38,28 @@
       opacity: 1;
     }
     img{
-      width: 20px;
-      height: 20px;
-  
+      width: 2rem;
+      height: 2rem;
     }
   }
     .food-card-img img {
       width: 100%;
       border-radius: 50%;
-      margin-bottom: 25px;
+      margin-bottom: 2.5rem;
     }
-    .food-card-name {
-      font-size: 18px;
+    &-name {
+      font-size: 1.8rem;
       font-weight: 700;
       text-transform: capitalize;
-      color: var(--text-black-100);
+    }
+    &-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background-color: #FFFFFF;
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 1rem;
+      border-radius: .8rem;
     }
   }
 }

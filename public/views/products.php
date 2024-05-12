@@ -9,7 +9,10 @@
       <div class="food-card-img">
         <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>">
       </div>
-      <div class="food-card-name"><?= $product['name'] ?></div>
+      <div class="food-card-name">
+        <p><?= $product['name'] ?></p>
+        <p class="food-card-price"><?= $product['price'] . ' €' ?></p>
+      </div>
     </div>
   <?php endforeach; ?>
 </div>
